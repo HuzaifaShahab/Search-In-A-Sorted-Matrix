@@ -1,24 +1,25 @@
 public class searchInASortedMatrix {
     public static boolean stairCaseApproach(int [][] multiArray , int key){
-        boolean found = false ;
+        boolean flag = false ;                   // Indicator
+
         int row = 0 ;
         int col = multiArray[0].length - 1;
 
-        while (row < multiArray.length && col >= 0){
+        while (row < multiArray.length && col >= 0){       // Loop Logic
 
             if (key == multiArray[row][col]){
                 System.out.println("Key Found At Index : "+row+","+col);
-                found = true ;
+                flag = true ;
             }
                 if (key > multiArray[row][col])
                     row++ ;
                 else
                     col-- ;
         }
-        return found ;
+        return flag ;
     }
     public static void main(String[] args) {
-        int [][] multiArray = {{10,20,30,40},
+        int [][] multiArray = {{10,20,30,40},         
                                 {15,25,35,45},
                                 {27,29,37,48},
                                 {32,33,39,50}} ;
