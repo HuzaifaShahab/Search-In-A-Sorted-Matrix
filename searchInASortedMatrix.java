@@ -5,7 +5,7 @@ public class searchInASortedMatrix {
         int row = 0 ;
         int col = multiArray[0].length - 1;
 //      From Top-Right to Bottom-Left Corner In A Matrix[].
-        while (row < multiArray.length && col >= 0){       // Loop Logic - Followed Stair Case approach.
+        while (row < multiArray.length && col >= 0){       // Loop Logic - Followed A Stair Case approach.
 
             if (key == multiArray[row][col]){
                 System.out.println("Key Found At Index : "+row+","+col);
