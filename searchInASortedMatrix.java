@@ -19,7 +19,7 @@ public class searchInASortedMatrix {
         return flag ;
     }
     public static void main(String[] args) {
-        int [][] multiArray = {{10,20,30,40},         
+        int [][] multiArray = {{10,20,30,40},         // Row wise & col wise sorted array.
                                 {15,25,35,45},
                                 {27,29,37,48},
                                 {32,33,39,50}} ;
