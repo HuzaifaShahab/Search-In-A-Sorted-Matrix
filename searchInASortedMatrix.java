@@ -11,7 +11,7 @@ public class searchInASortedMatrix {
                 System.out.println("Key Found At Index : "+row+","+col);
                 flag = true ;
             }
-                if (key > multiArray[row][col])
+                if (key > multiArray[row][col]) // Move to the next line
                     row++ ;
                 else
                     col-- ;
