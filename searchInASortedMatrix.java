@@ -14,16 +14,16 @@ public class searchInASortedMatrix {
                 if (key > multiArray[row][col]) // Move to the next line
                     row++ ;
                 else
-                    col-- ;
+                    col-- ;  // Move to the left side
         }
-        return flag ;
+        return flag ;  // Will keep track of it.
     }
     public static void main(String[] args) {
         int [][] multiArray = {{10,20,30,40},         // Row wise & col wise sorted multi-array.
                                 {15,25,35,45},
                                 {27,29,37,48},
                                 {32,33,39,50}} ;
-        int key = 50 ;
+        int key = 50 ;  // Target
 
         boolean flag= stairCaseApproach(multiArray , key) ;
         if (flag) System.out.println("Successful!");
